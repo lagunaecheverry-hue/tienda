@@ -1,0 +1,1044 @@
+*{
+    margin:0;
+    padding: 0;
+    
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #f4f6f8;
+    background-color: antiquewhite;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid grey;
+    cursor: help;
+}
+
+h1{
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+/*-------------------------------------------------------------------- */
+/*Clases para los No metales*/ 
+
+/* METAL */
+
+.metal,.escandio,.titanio,.vanadio,.cromo,.manganeso,.hierro,.cobalto,.niquel,.cobre,.Cinc,.Itrio,.Circón,.Niobio,.Molibdeno,.Tecnecio,.Cadmio,.Plata,.Rutenio,.Rodio,.Paladio,.Rutherfordio,.Dubnio,.Seaborgio,.Bohrio,.Hasio,.Meitnerio,.Darmstatio,.Roentgenio,.Copérnico,.Hafnio,.Tantalio,.Tungsteno,.Renio,.Osmio,.Iridio,.Platino,.Oro,.Mercurio{
+    background-color: rgb(151, 46, 204);
+}
+
+/* SEMIMETAL */
+
+.semimetal,.boro,.silicio,.Germanio,.Arsénico,.Antimonio,.Telurio,.Polonio{
+    background-color: rgb(238, 46, 46);
+}
+
+/* METALES REPRESENTATIVOS */
+
+.metales-representativos,.Aluminio,.Galio,.Indio,.Estaño,.Bismuto,.Talio,.Plomo,.Nihonio,.Flerovio,.Moscovio,.Livermorio,.litio,.berilio,.sodio,.magnesio,.potasio,.calsio,.Rubidio,.Estroncio,.Cesio,.Bario,.Francio,.Radio{
+    background-color: rgb(82, 82, 255);
+}
+
+/* Ununseptium */
+.Ununseptium{
+    background-color: rgb(4, 222, 207);
+}
+
+/* METALES DE TRANSICION */
+
+.metales-de-transicion{
+    background-color: rgb(162, 106, 179);
+}
+
+/* NO METAL */
+
+.no-metal,.neon,.argon,.Criptón,.Xenón,.Radón,.Oganesón{
+    background-color: green;
+}
+
+/* GASES NOBLES */
+
+.gases-nobles{
+    background-color: rgb(12, 243, 212);
+    color: white;
+}
+
+/* NO METALES */
+
+.no-metales,.carbono,.nitrogeno,.oxigeno,.fluor,.fosforo,.azufre,.cloro,.Selenio,.Bromo,.Hidrogeno,.Yodo,.Astatina{
+    background-color: greenyellow;
+}
+
+/* LANTANIDOS */
+
+.lantanidos,.Lantano,.Cerio,.Praseodimio,.Neodimio,.Prometio,.Samario,.Europio,.Gadolinio,.Terbio,.Disprosio,.Holmio,.Holmio,.Tulio,.Iterbio,.Lutecio,.Erbio{
+    background-color: #c712acf8;
+}
+
+/* ACTINIDOS */
+
+
+.actinidos,.Actinio,.Torio,.Protactinio,.Uranio,.Neptunio,.Plutonio,.Americio,.Curio,.Berkelio,.Californio,.Einstenio,.Fermio,.Mendelevio,.Nobelio,.Laurencio{
+    background-color: rgb(220, 167, 206);
+}
+
+
+
+
+
+
+/* ------------------------------------------------------------------- */
+/* estilos generales para los elementos */
+
+.numero-atomico{
+    font-size: 0.8em;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.simbolo{
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nombre{
+    text-align: center;
+}
+
+.peso{
+    font-size: 0.8em;
+    text-align: center;
+}
+
+/* ------------------------------------------------------------------- */
+/* Posicion de elementos */
+
+
+
+/* ---------------------------------- */
+/* GRUPO 1 */
+
+#elemento1{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+#elemento3{
+    position: absolute;
+    top: 150px;
+    left: 50px;
+}
+
+#elemento11{
+    position: absolute;
+    top: 250px;
+    left: 50px;
+}
+
+#elemento19{
+    position: absolute;
+    top: 350px;
+    left: 50px;
+}
+
+#elemento37{
+    position: absolute;
+    top: 450px;
+    left: 50px;
+}
+
+#elemento55{
+    position: absolute;
+    top: 550px;
+    left:50px;
+}
+
+#elemento87{
+    position: absolute;
+    top: 650px;
+    left: 50px;
+}
+
+
+
+/* ------------------------------ */
+/* GRUPO 2 */
+
+#elemento4{
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+
+#elemento12{
+    position: absolute;
+    top: 250px;
+    left: 150px;
+}
+
+#elemento20{
+    position: absolute;
+    top: 350px;
+    left: 150px;
+}
+
+#elemento38{
+    position: absolute;
+    top: 450px;
+    left: 150px;
+}
+
+#elemento56{
+    position: absolute;
+    top: 550px;
+    left: 150px;
+}
+
+#elemento88{
+    position: absolute;
+    top: 650px;
+    left: 150px;
+}
+
+
+
+/* -------------------------------- */
+/* GRUPO 3 */
+
+
+#elemento21{
+    position: absolute;
+    top: 350px;
+    left: 250px;
+}
+
+#elemento39{
+    position: absolute;
+    top: 450px;
+    left: 250px;
+}
+
+#elemento57{
+    position: absolute;
+    top: 550px;
+    left: 250px;
+}
+
+#elemento89{
+    position: absolute;
+    top: 650px;
+    left: 250px;
+}
+
+
+
+/* --------------------------------- */
+/* GRUPO 4 */
+
+
+#elemento22{
+    position: absolute;
+    top: 350px;
+    left: 350px;
+}
+
+#elemento40{
+    position: absolute;
+    top: 450px;
+    left: 350px;
+}
+
+#elemento72{
+    position: absolute;
+    top: 550px;
+    left: 350px;
+}
+
+#elemento104{
+    position: absolute;
+    top: 650px;
+    left: 350px;
+}
+
+/* GRUPO 5 */
+
+#elemento23{
+    position: absolute;
+    top: 350px;
+    left: 450px;
+}
+
+#elemento41{
+    position: absolute;
+    top: 450px;
+    left: 450px;
+}
+
+#elemento73{
+    position: absolute;
+    top: 550px;
+    left: 450px;
+}
+
+#elemento105{
+    position: absolute;
+    top: 650px;
+    left: 450px;
+}
+
+/* GRUPO 6 */
+
+#elemento24{
+    position: absolute;
+    top: 350px;
+    left: 550px;
+}
+
+#elemento42{
+    position: absolute;
+    top: 450px;
+    left: 550px;
+}
+
+#elemento74{
+    position: absolute;
+    top: 550px;
+    left: 550px;
+}
+
+#elemento106{
+    position: absolute;
+    top: 650px;
+    left: 550px;
+}
+
+/* GRUPO 7 */
+
+#elemento25{
+    position: absolute;
+    top: 350px;
+    left: 650px;
+}
+
+#elemento43{
+    position: absolute;
+    top: 450px;
+    left: 650px;
+}
+
+#elemento75{
+    position: absolute;
+    top: 550px;
+    left: 650px;
+}
+
+#elemento107{
+    position: absolute;
+    top: 650px;
+    left: 650px;
+}
+
+/* GRUPO 8 */
+
+#elemento26{
+    position: absolute;
+    top: 350px;
+    left: 750px;
+}
+
+#elemento44{
+    position: absolute;
+    top: 450px;
+    left: 750px;
+}
+
+#elemento76{
+    position: absolute;
+    top: 550px;
+    left: 750px;
+}
+
+#elemento108{
+    position: absolute;
+    top: 650px;
+    left: 750px;
+}
+
+/* GRUPO 9 */
+
+#elemento27{
+    position: absolute;
+    top: 350px;
+    left: 850px;
+}
+
+#elemento45{
+    position: absolute;
+    top: 450px;
+    left: 850px;
+}
+
+#elemento77{
+    position: absolute;
+    top: 550px;
+    left: 850px;
+}
+
+#elemento109{
+    position: absolute;
+    top: 650px;
+    left: 850px;
+}
+
+/* GRUPO 10 */
+
+#elemento28{
+    position: absolute;
+    top: 350px;
+    left: 950px;
+}
+
+#elemento46{
+    position: absolute;
+    top: 450px;
+    left: 950px;
+}
+
+#elemento78{
+    position: absolute;
+    top: 550px;
+    left: 950px;
+}
+
+#elemento110{
+    position: absolute;
+    top: 650px;
+    left: 950px;
+}
+
+/* GRUPO 11 */
+
+#elemento29{
+    position: absolute;
+    top: 350px;
+    left: 1050px;
+}
+
+#elemento47{
+    position: absolute;
+    top: 450px;
+    left: 1050px;
+}
+
+#elemento79{
+    position: absolute;
+    top: 550px;
+    left: 1050px;
+}
+
+#elemento111{
+    position: absolute;
+    top: 650px;
+    left: 1050px;
+}
+
+/* GRUPO 12 */
+
+#elemento30{
+    position: absolute;
+    top: 350px;
+    left: 1150px;
+}
+
+#elemento48{
+    position: absolute;
+    top: 450px;
+    left: 1150px;
+}
+
+#elemento80{
+    position: absolute;
+    top: 550px;
+    left: 1150px;
+}
+
+#elemento112{
+    position: absolute;
+    top: 650px;
+    left: 1150px;
+}
+
+/* GRUPO 13 */
+
+#elemento5{
+    position: absolute;
+    top: 150px;
+    left: 1250px;
+}
+
+#elemento13{
+    position: absolute;
+    top: 250px;
+    left: 1250px;
+}
+
+#elemento31{
+    position: absolute;
+    top: 350px;
+    left: 1250px;
+}
+
+#elemento49{
+    position: absolute;
+    top: 450px;
+    left: 1250px;
+}
+
+#elemento81{
+    position: absolute;
+    top: 550px;
+    left: 1250px;
+}
+
+#elemento113{
+    position: absolute;
+    top: 650px;
+    left: 1250px;
+}
+
+/* GRUPO 14 */
+
+#elemento6{
+    position: absolute;
+    top: 150px;
+    left: 1350px;
+}
+
+#elemento14{
+    position: absolute;
+    top: 250px;
+    left: 1350px;
+}
+
+#elemento32{
+    position: absolute;
+    top: 350px;
+    left: 1350px;
+}
+
+#elemento50{
+    position: absolute;
+    top: 450px;
+    left: 1350px;
+}
+
+#elemento82{
+    position: absolute;
+    top: 550px;
+    left: 1350px;
+}
+
+#elemento114{
+    position: absolute;
+    top: 650px;
+    left: 1350px;
+}
+
+/* GRUPO 15 */
+
+#elemento7{
+    position: absolute;
+    top: 150px;
+    left: 1450px;
+}
+
+#elemento15{
+    position: absolute;
+    top: 250px;
+    left: 1450px;
+}
+
+#elemento33{
+    position: absolute;
+    top: 350px;
+    left: 1450px;
+}
+
+#elemento51{
+    position: absolute;
+    top: 450px;
+    left: 1450px;
+}
+
+#elemento83{
+    position: absolute;
+    top: 550px;
+    left: 1450px;
+}
+
+#elemento115{
+    position: absolute;
+    top: 650px;
+    left: 1450px;
+}
+
+/* GRUPO 16 */
+
+#elemento8{
+    position: absolute;
+    top: 150px;
+    left: 1550px;
+}
+
+#elemento16{
+    position: absolute;
+    top: 250px;
+    left: 1550px;
+}
+
+#elemento34{
+    position: absolute;
+    top: 350px;
+    left: 1550px;
+}
+
+#elemento52{
+    position: absolute;
+    top: 450px;
+    left: 1550px;
+}
+
+#elemento84{
+    position: absolute;
+    top: 550px;
+    left: 1550px;
+}
+
+#elemento116{
+    position: absolute;
+    top: 650px;
+    left: 1550px;
+}
+
+/* GRUPO 17 */
+
+
+#elemento9{
+    position: absolute;
+    top: 150px;
+    left: 1650px;
+}
+
+#elemento17{
+    position: absolute;
+    top: 250px;
+    left: 1650px;
+}
+
+#elemento35{
+    position: absolute;
+    top: 350px;
+    left: 1650px;
+}
+
+#elemento53{
+    position: absolute;
+    top: 450px;
+    left: 1650px;
+}
+
+#elemento85{
+    position: absolute;
+    top: 550px;
+    left: 1650px;
+}
+
+#elemento117{
+    position: absolute;
+    top: 650px;
+    left: 1650px;
+}
+
+/* GRUPO 18 */
+
+
+#elemento2{
+    position: absolute;
+    top: 50px;
+    left: 1750px;
+}
+
+#elemento10{
+    position: absolute;
+    top: 150px;
+    left: 1750px;
+}
+
+#elemento18{
+    position: absolute;
+    top: 250px;
+    left: 1750px;
+}
+
+#elemento36{
+    position: absolute;
+    top: 350px;
+    left: 1750px;
+}
+
+#elemento54{
+    position: absolute;
+    top: 450px;
+    left: 1750px;
+}
+
+#elemento86{
+    position: absolute;
+    top: 550px;
+    left:1750px;
+}
+
+#elemento118{
+    position: absolute;
+    top: 650px;
+    left: 1750px;
+}
+
+
+/* BLOQUE-f */
+
+/* 1 */
+
+#elemento58{
+    position: absolute;
+    top: 850px;
+    left: 450px;
+}
+
+#elemento90{
+    position: absolute;
+    top: 950px;
+    left: 450px;
+}
+
+/* 2 */
+
+
+#elemento59{
+    position: absolute;
+    top: 850px;
+    left: 550px;
+}
+
+#elemento91{
+    position: absolute;
+    top: 950px;
+    left: 550px;
+}
+
+
+/* 3 */
+
+#elemento60{
+    position: absolute;
+    top: 850px;
+    left: 650px;
+}
+
+#elemento92{
+    position: absolute;
+    top: 950px;
+    left: 650px;
+}
+
+
+/* 4 */
+
+#elemento61{
+    position: absolute;
+    top: 850px;
+    left: 750px;
+}
+
+#elemento93{
+    position: absolute;
+    top: 950px;
+    left: 750px;
+}
+
+
+/* 5 */
+
+#elemento62{
+    position: absolute;
+    top: 850px;
+    left: 850px;
+}
+
+#elemento94{
+    position: absolute;
+    top: 950px;
+    left: 850px;
+}
+
+
+/* 6 */
+
+#elemento63{
+    position: absolute;
+    top: 850px;
+    left: 950px;
+}
+
+#elemento95{
+    position: absolute;
+    top: 950px;
+    left: 950px;
+}
+
+
+/* 7 */
+
+#elemento64{
+    position: absolute;
+    top: 850px;
+    left: 1050px;
+}
+
+#elemento96{
+    position: absolute;
+    top: 950px;
+    left: 1050px;
+}
+
+
+/* 8 */
+
+#elemento65{
+    position: absolute;
+    top: 850px;
+    left: 1150px;
+}
+
+#elemento97{
+    position: absolute;
+    top: 950px;
+    left: 1150px;
+}
+
+
+/* 9 */
+
+#elemento66{
+    position: absolute;
+    top: 850px;
+    left: 1250px;
+}
+
+#elemento98{
+    position: absolute;
+    top: 950px;
+    left: 1250px;
+}
+
+
+/* 10 */
+
+#elemento67{
+    position: absolute;
+    top: 850px;
+    left: 1350px;
+}
+
+#elemento99{
+    position: absolute;
+    top: 950px;
+    left: 1350px;
+}
+
+
+/* 11 */
+
+#elemento68{
+    position: absolute;
+    top: 850px;
+    left: 1450px;
+}
+
+#elemento100{
+    position: absolute;
+    top: 950px;
+    left: 1450px;
+}
+
+
+/* 12 */
+
+#elemento69{
+    position: absolute;
+    top: 850px;
+    left: 1550px;
+}
+
+#elemento101{
+    position: absolute;
+    top: 950px;
+    left: 1550px;
+}
+
+
+/* 13 */
+
+#elemento70{
+    position: absolute;
+    top: 850px;
+    left: 1650px;
+}
+
+#elemento102{
+    position: absolute;
+    top: 950px;
+    left: 1650px;
+}
+
+/* 14 */
+
+#elemento71{
+    position: absolute;
+    top: 850px;
+    left: 1750px;
+}
+
+#elemento103{
+    position: absolute;
+    top: 950px;
+    left: 1750px;
+}
+
+/* Estilos para la H grande donde se señalan sus partes (peso,nombre,simboolo,número atómico)*/
+
+/*Grandura del div */
+.Hidrógeno1{
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgba(0, 0, 0, 0.82);
+    background-color: #FF8C00;
+}
+/*posición del div*/
+#elemento_H{
+    position: absolute;
+   top: 120px;
+   left: 450px;  
+}
+/*Estilos para lo que va escrito dentro del div*/
+.numero-atomico-H{
+    font-size: 1.8em;
+}
+.simbolo-H{
+    font-size: 1.8em ;
+    font-weight: bold;
+    text-align: center;   
+}
+.nombre-H{
+    font-size: 1.8em;
+    text-align: center;
+}
+.peso-H{
+    
+    font-size: 1.2em;
+    position: absolute;
+    top: 5px;
+   right: 5px;
+   
+}
+/*Coodenadas de lo que señala los elementos dentro del div (flechas y nombre de lo que se indica)*/
+.texto{
+    font-size: 1.2em ;
+    font-weight: bold;
+}
+#n{
+    position: absolute;
+   top: 125px;
+   left: 270px;   
+}
+#s{
+    position: absolute;
+   top: 160px;
+   left: 270px;   
+}
+#nombre{
+    position: absolute;
+   top: 195px;
+   left: 605px; 
+}
+#peso{
+    position: absolute;
+   top: 125px;
+   left: 605px; 
+}
+/*Coordenadas para aliniar el nombre (un parrafo) de cada tipo de elementos(no metales, gases nobles...)*/
+#g-n{
+    position: absolute;
+   top: 133px;
+   left: 805px;
+   
+}
+#h-l{
+    position: absolute;
+    top: 163px;
+    left: 805px;  
+}
+#n-m{
+    position: absolute;
+    top: 193px;
+    left: 805px; 
+}
+#m-l{
+    position: absolute;
+    top: 223px;
+    left: 805px; 
+}
+#o-m{
+    position: absolute;
+    top: 253px;
+    left: 805px; 
+}
+#m-t{
+    position: absolute;
+    top: 133px;
+    left:965px;
+}
+#a-c{
+    position: absolute;
+    top: 163px;
+    left:965px;
+}
+#m-a{
+    position: absolute;
+    top: 193px;
+    left:965px;
+}
+#l-t{
+    position: absolute;
+    top: 223px;
+    left:965px;
+}
+#a-s{
+    position: absolute;
+    top: 253px;
+    left:965px;
+}
+

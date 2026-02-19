@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Periódica</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/abrirVentana.js"></script>
+
+</head>
+<body>
+    <h1>Periodic Table</h1>
+    <h2 style="text-align: center; font-size: 0.9em;">Devolper:  Yeferson Alarcon Gurrute&reg;</h2>
+    <!-- H grande donde se señalan sus partes (peso,nombre,simboolo,número atómico)-->
+    <p class="texto" id="n">Número atómico&longrightarrow;</p>
+    <p class="texto" id="s">Simbolo químico&longrightarrow;</p>
+    <p class="texto" id="nombre">&longleftarrow;Nombre</p>
+    <p class="texto" id="peso">&longleftarrow;Masa atómica</p>
+    <!--Texto qque va dentro de la H grande-->
+    <div class="Hidrógeno1" id="elemento_H">
+        <p class="numero-atomico-H">1</p>
+        <p class="simbolo-H">H</p>
+        <p class="nombre-H">Hidrógeno</p>
+        <p class="peso-H">1.008</p>
+    </div>
+
+
+
+<!-- TABLA PERIODICA -->
+
+    <div class="hidrogeno no-metales" id="elemento1" onclick="abrirHidrogeno()">
+        <p class="numero-atomico">1</p>
+        <p class="simbolo">H</p>
+        <p class="nombre">Hidrogeno</p>
+        <p class="peso">1.008</p>
+    </div>
+    
+    <div class="helio no-metal" id="elemento2" >
+        <p class="numero-atomico">2</p>
+        <p class="simbolo">He</p>
+        <p class="nombre">Helio</p>
+        <p class="peso">4.0026</p>
+    </div>
+    
+    <div class="litio" id="elemento3" onclick="abrirLitio()">
+        <p class="numero-atomico">3</p>
+        <p class="simbolo">Li</p>
+        <p class="nombre">Litio</p>
+        <p class="peso">6.941</p>
+    </div>
+    
+    <div class="berilio" id="elemento4">
+        <p class="numero-atomico">4</p>
+        <p class="simbolo">Be</p>
+        <p class="nombre">Berilio</p>
+        <p class="peso">9.0122</p>
+    </div>
+    
+    <div class="boro" id="elemento5">
+        <p class="numero-atomico">5</p>
+        <p class="simbolo">Br</p>
+        <p class="nombre">Boro</p>
+        <p class="peso">10.81</p>
+    </div>
+    
+    <div class="carbono" id="elemento6">
+        <p class="numero-atomico">6</p>
+        <p class="simbolo">C</p>
+        <p class="nombre">Carbono</p>
+        <p class="peso">12.0</p>
+    </div>
+    
+    <div class="nitrogeno" id="elemento7">
+        <p class="numero-atomico">7</p>
+        <p class="simbolo">N</p>
+        <p class="nombre">Nitrogeno</p>
+        <p class="peso">14.0</p>
+    </div>
+    
+    <div class="oxigeno" id="elemento8">
+        <p class="numero-atomico">8</p>
+        <p class="simbolo">O</p>
+        <p class="nombre">Oxigeno</p>
+        <p class="peso">16.0</p>
+    </div>
+    
+    <div class="fluor" id="elemento9">
+        <p class="numero-atomico">9</p>
+        <p class="simbolo">F</p>
+        <p class="nombre">Flúor</p>
+        <p class="peso">19.0</p>
+    </div>
+    
+    <div class="neon" id="elemento10">
+        <p class="numero-atomico">10</p>
+        <p class="simbolo">Ne</p>
+        <p class="nombre">Neon</p>
+        <p class="peso">20.18</p>
+    </div>
+
+
+    <div class="sodio" id="elemento11">
+        <p class="numero-atomico">11</p>
+        <p class="simbolo">Na</p>
+        <p class="nombre">Sodio</p>
+        <p class="peso">22.990</p>
+    </div>
+    
+    <div class="magnesio" id="elemento12">
+        <p class="numero-atomico">12</p>
+        <p class="simbolo">Mg</p>
+        <p class="nombre">Magnesio</p>
+        <p class="peso">24.30</p>
+    </div>
+    
+    <div class="Aluminio" id="elemento13">
+        <p class="numero-atomico">13</p>
+        <p class="simbolo">Al</p>
+        <p class="nombre">Aluminio</p>
+        <p class="peso">27.0</p>
+    </div>
+    
+    <div class="silicio" id="elemento14">
+        <p class="numero-atomico">14</p>
+        <p class="simbolo">Si</p>
+        <p class="nombre">silicio</p>
+        <p class="peso">28.09</p>
+    </div>
+    
+    <div class="fosforo" id="elemento15">
+        <p class="numero-atomico">15</p>
+        <p class="simbolo">P</p>
+        <p class="nombre">Fosforo</p>
+        <p class="peso">31.0</p>
+    </div>
+
+    <div class="azufre" id="elemento16">
+        <p class="numero-atomico">16</p>
+        <p class="simbolo">S</p>
+        <p class="nombre">Azufre</p>
+        <p class="peso">32.07</p>
+    </div>
+
+
+    <div class="cloro" id="elemento17">
+        <p class="numero-atomico">17</p>
+        <p class="simbolo">Cl</p>
+        <p class="nombre">Cloro</p>
+        <p class="peso">35.45</p>
+    </div>
+
+    
+    <div class="argon" id="elemento18">
+        <p class="numero-atomico">18</p>
+        <p class="simbolo">Ar</p>
+        <p class="nombre">Argon</p>
+        <p class="peso">40.0</p>
+    </div>
+
+    <div class="potasio" id="elemento19">
+        <p class="numero-atomico">19</p>
+        <p class="simbolo">K</p>
+        <p class="nombre">Potasio</p>
+        <p class="peso">39.098</p>
+    </div>
+
+    <div class="calsio" id="elemento20">
+        <p class="numero-atomico">20</p>
+        <p class="simbolo">Ca</p>
+        <p class="nombre">Calsio</p>
+        <p class="peso">40.08</p>
+    </div>
+
+    <div class="escandio " id="elemento21">
+        <p class="numero-atomico">21</p>
+        <p class="simbolo">Sc</p>
+        <p class="nombre">Escandio</p>
+        <p class="peso">45.0</p>
+    </div>
+
+    <div class="titanio" id="elemento22">
+        <p class="numero-atomico">22</p>
+        <p class="simbolo">Ti</p>
+        <p class="nombre">Titanio</p>
+        <p class="peso">47.867</p>
+    </div>
+
+    <div class="vanadio" id="elemento23">
+        <p class="numero-atomico">23</p>
+        <p class="simbolo">V</p>
+        <p class="nombre">Vanadio</p>
+        <p class="peso">50.94</p>
+    </div>
+
+    <div class="cromo" id="elemento24">
+        <p class="numero-atomico">24</p>
+        <p class="simbolo">Cr</p>
+        <p class="nombre">Cromo</p>
+        <p class="peso">52.0</p>
+    </div>
+
+    <div class="manganeso" id="elemento25">
+        <p class="numero-atomico">25</p>
+        <p class="simbolo">Mn</p>
+        <p class="nombre">Manganeso</p>
+        <p class="peso">54.94</p>
+    </div>
+
+    <div class="hierro" id="elemento26">
+        <p class="numero-atomico">26</p>
+        <p class="simbolo">Fe</p>
+        <p class="nombre">Hierro</p>
+        <p class="peso">55.85</p>
+    </div>
+
+    <div class="cobalto" id="elemento27">
+        <p class="numero-atomico">27</p>
+        <p class="simbolo">Co</p>
+        <p class="nombre">Cobalto</p>
+        <p class="peso">58.93</p>
+    </div>
+
+    <div class="niquel" id="elemento28">
+        <p class="numero-atomico">28</p>
+        <p class="simbolo">Ni</p>
+        <p class="nombre">Níquel</p>
+        <p class="peso">58.69</p>
+    </div>
+
+    <div class="cobre" id="elemento29">
+        <p class="numero-atomico">29</p>
+        <p class="simbolo">Cu</p>
+        <p class="nombre">Cobre</p>
+        <p class="peso">63.55</p>
+    </div>
+
+    <div class="Cinc" id="elemento30">
+        <p class="numero-atomico">30</p>
+        <p class="simbolo">Zn</p>
+        <p class="nombre">Cinc</p>
+        <p class="peso">65.38</p>
+    </div>
+
+    <div class="Galio" id="elemento31">
+        <p class="numero-atomico">31</p>
+        <p class="simbolo">Ga</p>
+        <p class="nombre">Galio</p>
+        <p class="peso">69.72</p>
+    </div>
+
+    <div class="Germanio" id="elemento32">
+        <p class="numero-atomico">32</p>
+        <p class="simbolo">Ge</p>
+        <p class="nombre">Germanio</p>
+        <p class="peso">72.63</p>
+    </div>
+
+    <div class="Arsénico" id="elemento33">
+        <p class="numero-atomico">33</p>
+        <p class="simbolo">As</p>
+        <p class="nombre">Arsénico</p>
+        <p class="peso">74.92</p>
+    </div>
+
+    <div class="Selenio" id="elemento34">
+        <p class="numero-atomico">34</p>
+        <p class="simbolo">Se</p>
+        <p class="nombre">Selenio</p>
+        <p class="peso">78.97</p>
+    </div>
+
+    <div class="Bromo" id="elemento35">
+        <p class="numero-atomico">35</p>
+        <p class="simbolo">Br</p>
+        <p class="nombre">Bromo</p>
+        <p class="peso">79.90</p>
+    </div>
+
+    <div class="Criptón" id="elemento36">
+        <p class="numero-atomico">36</p>
+        <p class="simbolo">Kr</p>
+        <p class="nombre">Criptón</p>
+        <p class="peso">83.80</p>
+    </div>
+
+    <div class="Rubidio" id="elemento37">
+        <p class="numero-atomico">37</p>
+        <p class="simbolo">Rb</p>
+        <p class="nombre">Rubidio</p>
+        <p class="peso">85.47</p>
+    </div>
+
+
+    <div class="Estroncio" id="elemento38">
+        <p class="numero-atomico">38</p>
+        <p class="simbolo">Sr</p>
+        <p class="nombre">Estroncio</p>
+        <p class="peso">87.62</p>
+    </div>
+
+
+    <div class="Itrio" id="elemento39">
+        <p class="numero-atomico">39</p>
+        <p class="simbolo">Y</p>
+        <p class="nombre">Itrio</p>
+        <p class="peso">88.91</p>
+    </div>
+
+
+    <div class="Circón" id="elemento40">
+        <p class="numero-atomico">40</p>
+        <p class="simbolo">Zr</p>
+        <p class="nombre">Circón</p>
+        <p class="peso">91.22</p>
+    </div>
+
+    <div class="Niobio" id="elemento41">
+        <p class="numero-atomico">41</p>
+        <p class="simbolo">Nb</p>
+        <p class="nombre">Niobio</p>
+        <p class="peso">92.91</p>
+    </div>
+
+    <div class="Molibdeno" id="elemento42">
+        <p class="numero-atomico">42</p>
+        <p class="simbolo">Mo</p>
+        <p class="nombre">Molibdeno</p>
+        <p class="peso">95.95</p>
+    </div>
+
+    <div class="Tecnecio" id="elemento43">
+        <p class="numero-atomico">43</p>
+        <p class="simbolo">Tc</p>
+        <p class="nombre">Tecnecio</p>
+        <p class="peso">98.00</p>
+    </div>
+
+    <div class="Rutenio" id="elemento44">
+        <p class="numero-atomico">44</p>
+        <p class="simbolo">Ru</p>
+        <p class="nombre">Rutenio</p>
+        <p class="peso">101.1</p>
+    </div>
+
+    <div class="Rodio" id="elemento45">
+        <p class="numero-atomico">45</p>
+        <p class="simbolo">Rh</p>
+        <p class="nombre">Rodio</p>
+        <p class="peso">102.9</p>
+    </div>
+
+    <div class="Paladio" id="elemento46">
+        <p class="numero-atomico">46</p>
+        <p class="simbolo">Pd</p>
+        <p class="nombre">Paladio</p>
+        <p class="peso">106.4</p>
+    </div>
+
+    <div class="Plata" id="elemento47">
+        <p class="numero-atomico">47</p>
+        <p class="simbolo">Ag</p>
+        <p class="nombre">Plata</p>
+        <p class="peso">107.9</p>
+    </div>
+
+    <div class="Cadmio" id="elemento48">
+        <p class="numero-atomico">48</p>
+        <p class="simbolo">Cd</p>
+        <p class="nombre">Cadmio</p>
+        <p class="peso">112.4</p>
+    </div>
+
+    <div class="Indio" id="elemento49">
+        <p class="numero-atomico">49</p>
+        <p class="simbolo">In</p>
+        <p class="nombre">Indio</p>
+        <p class="peso">114.8</p>
+    </div>
+
+    <div class="Estaño" id="elemento50">
+        <p class="numero-atomico">50</p>
+        <p class="simbolo">Sn</p>
+        <p class="nombre">Estaño</p>
+        <p class="peso">118.7</p>
+    </div>
+
+    <div class="Antimonio" id="elemento51">
+        <p class="numero-atomico">51</p>
+        <p class="simbolo">Sb</p>
+        <p class="nombre">Antimonio</p>
+        <p class="peso">121.8</p>
+    </div>
+
+    <div class="Telurio" id="elemento52">
+        <p class="numero-atomico">52</p>
+        <p class="simbolo">Te</p>
+        <p class="nombre">Telurio</p>
+        <p class="peso">127.6</p>
+    </div>
+
+    <div class="Yodo" id="elemento53">
+        <p class="numero-atomico">53</p>
+        <p class="simbolo">I</p>
+        <p class="nombre">Yodo</p>
+        <p class="peso">126.9</p>
+    </div>
+
+    <div class="Xenón" id="elemento54">
+        <p class="numero-atomico">54</p>
+        <p class="simbolo">Xe</p>
+        <p class="nombre">Xenón</p>
+        <p class="peso">131.3</p>
+    </div>
+
+    <div class="Cesio" id="elemento55">
+        <p class="numero-atomico">55</p>
+        <p class="simbolo">Cs</p>
+        <p class="nombre">Cesio</p>
+        <p class="peso">132.9</p>
+    </div>
+
+    <div class="Bario" id="elemento56">
+        <p class="numero-atomico">56</p>
+        <p class="simbolo">Ba</p>
+        <p class="nombre">Bario</p>
+        <p class="peso">137.3</p>
+    </div>
+
+    <div class="Lantano" id="elemento57">
+        <p class="numero-atomico">57</p>
+        <p class="simbolo">La</p>
+        <p class="nombre">Lantano</p>
+        <p class="peso">Lantano</p>
+    </div>
+
+    <div class="Cerio" id="elemento58">
+        <p class="numero-atomico">58</p>
+        <p class="simbolo">Ce</p>
+        <p class="nombre">Cerio</p>
+        <p class="peso">140.1</p>
+    </div>
+
+    <div class="Praseodimio" id="elemento59">
+        <p class="numero-atomico">59</p>
+        <p class="simbolo">Pr</p>
+        <p class="nombre">Praseodimio</p>
+        <p class="peso">140.9</p>
+    </div>
+
+    <div class="Neodimio" id="elemento60">
+        <p class="numero-atomico">60</p>
+        <p class="simbolo">Nd</p>
+        <p class="nombre">Neodimio</p>
+        <p class="peso">144.2</p>
+    </div>
+
+    <div class="Prometio" id="elemento61">
+        <p class="numero-atomico">61</p>
+        <p class="simbolo">Pm</p>
+        <p class="nombre">Prometio</p>
+        <p class="peso">145</p>
+    </div>
+
+    <div class="Samario" id="elemento62">
+        <p class="numero-atomico">62</p>
+        <p class="simbolo">Sm</p>
+        <p class="nombre">Samario</p>
+        <p class="peso">150.4</p>
+    </div>
+
+    <div class="Europio" id="elemento63">
+        <p class="numero-atomico">63</p>
+        <p class="simbolo">Eu</p>
+        <p class="nombre">Europio</p>
+        <p class="peso">152.00</p>
+    </div>
+
+    <div class="Gadolinio" id="elemento64">
+        <p class="numero-atomico">64</p>
+        <p class="simbolo">Gd</p>
+        <p class="nombre">Gadolinio</p>
+        <p class="peso">157.3</p>
+    </div>
+
+    <div class="Terbio" id="elemento65">
+        <p class="numero-atomico">65</p>
+        <p class="simbolo">Tb</p>
+        <p class="nombre">Terbio</p>
+        <p class="peso">158.9</p>
+    </div>
+
+    <div class="Disprosio" id="elemento66">
+        <p class="numero-atomico">66</p>
+        <p class="simbolo">Dy</p>
+        <p class="nombre">Disprosio</p>
+        <p class="peso">162.5</p>
+    </div>
+
+    <div class="Holmio" id="elemento67">
+        <p class="numero-atomico">67</p>
+        <p class="simbolo">Ho</p>
+        <p class="nombre">Holmio</p>
+        <p class="peso">164.9</p>
+    </div>
+
+    <div class="Erbio" id="elemento68">
+        <p class="numero-atomico">68</p>
+        <p class="simbolo">Er</p>
+        <p class="nombre">Erbio</p>
+        <p class="peso">167.3</p>
+    </div>
+
+    <div class="Tulio" id="elemento69">
+        <p class="numero-atomico">69</p>
+        <p class="simbolo">Tm</p>
+        <p class="nombre">Tulio</p>
+        <p class="peso">168.9</p>
+    </div>
+
+    <div class="Iterbio" id="elemento70">
+        <p class="numero-atomico">70</p>
+        <p class="simbolo">Yb</p>
+        <p class="nombre">Iterbio</p>
+        <p class="peso">173.04</p>
+    </div>
+
+    <div class="Lutecio" id="elemento71">
+        <p class="numero-atomico">71</p>
+        <p class="simbolo">Lu</p>
+        <p class="nombre">Lutecio</p>
+        <p class="peso">175.00</p>
+    </div>
+
+    <div class="Hafnio" id="elemento72">
+        <p class="numero-atomico">72</p>
+        <p class="simbolo">Hf</p>
+        <p class="nombre">Hafnio</p>
+        <p class="peso">178.5</p>
+    </div>
+
+    <div class="Tantalio" id="elemento73">
+        <p class="numero-atomico">73</p>
+        <p class="simbolo">Ta</p>
+        <p class="nombre">Tantalio</p>
+        <p class="peso">180.9</p>
+    </div>
+
+    <div class="Tungsteno" id="elemento74">
+        <p class="numero-atomico">74</p>
+        <p class="simbolo">W</p>
+        <p class="nombre">Wolframio</p>
+        <p class="peso">183.8</p>
+    </div>
+
+    <div class="Renio" id="elemento75">
+        <p class="numero-atomico">75</p>
+        <p class="simbolo">Re</p>
+        <p class="nombre">Renio</p>
+        <p class="peso">186.2</p>
+    </div>
+
+    <div class="Osmio" id="elemento76">
+        <p class="numero-atomico">76</p>
+        <p class="simbolo">Os</p>
+        <p class="nombre">Osmio</p>
+        <p class="peso">190.2</p>
+    </div>
+
+    <div class="Iridio" id="elemento77">
+        <p class="numero-atomico">77</p>
+        <p class="simbolo">Ir</p>
+        <p class="nombre">Iridio</p>
+        <p class="peso">192.2</p>
+    </div>
+
+    <div class="Platino" id="elemento78">
+        <p class="numero-atomico">78</p>
+        <p class="simbolo">Pt</p>
+        <p class="nombre">Platino</p>
+        <p class="peso">195.1</p>
+    </div>
+
+    <div class="Oro" id="elemento79">
+        <p class="numero-atomico">79</p>
+        <p class="simbolo">Au</p>
+        <p class="nombre">Oro</p>
+        <p class="peso">197.00</p>
+    </div>
+
+    <div class="Mercurio" id="elemento80">
+        <p class="numero-atomico">80</p>
+        <p class="simbolo">Hg</p>
+        <p class="nombre">Mercurio</p>
+        <p class="peso">200.6</p>
+    </div>
+
+    <div class="Talio" id="elemento81">
+        <p class="numero-atomico">81</p>
+        <p class="simbolo">Tl</p>
+        <p class="nombre">Talio</p>
+        <p class="peso">204.4</p>
+    </div>
+
+    <div class="Plomo" id="elemento82">
+        <p class="numero-atomico">82</p>
+        <p class="simbolo">Pb</p>
+        <p class="nombre">Plomo</p>
+        <p class="peso">207.2</p>
+    </div>
+
+    <div class="Bismuto" id="elemento83">
+        <p class="numero-atomico">83</p>
+        <p class="simbolo">Bi</p>
+        <p class="nombre">Bismuto</p>
+        <p class="peso">209.00</p>
+    </div>
+
+    <div class="Polonio" id="elemento84">
+        <p class="numero-atomico">84</p>
+        <p class="simbolo">Po</p>
+        <p class="nombre">Polonio</p>
+        <p class="peso">(209)</p>
+    </div>
+
+    <div class="Astatina" id="elemento85">
+        <p class="numero-atomico">85</p>
+        <p class="simbolo">At</p>
+        <p class="nombre">Astatina</p>
+        <p class="peso">(210)</p>
+    </div>
+
+    <div class="Radón" id="elemento86">
+        <p class="numero-atomico">86</p>
+        <p class="simbolo">Rn</p>
+        <p class="nombre">Radón</p>
+        <p class="peso">(222)</p>
+    </div>
+
+    <div class="Francio" id="elemento87" onclick="abrirFrancio()">
+        <p class="numero-atomico">87</p>
+        <p class="simbolo">Fr</p>
+        <p class="nombre">Francio</p>
+        <p class="peso">(223)</p>
+    </div>
+
+    <div class="Radio" id="elemento88" onclick="abrirRadio()">
+        <p class="numero-atomico">88</p>
+        <p class="simbolo">Ra</p>
+        <p class="nombre">Radio</p>
+        <p class="peso">(226)</p>
+    </div>
+
+
+    <div class="Actinio" id="elemento89" onclick="abrirActinio()">
+        <p class="numero-atomico">89</p>
+        <p class="simbolo">Ac</p>
+        <p class="nombre">Actinio</p>
+        <p class="peso">(227)</p>
+    </div>
+    
+
+    <div class="Torio" id="elemento90">
+        <p class="numero-atomico">90</p>
+        <p class="simbolo">Th</p>
+        <p class="nombre">Torio</p>
+        <p class="peso">(232)</p>
+    </div>
+
+    <div class="Protactinio" id="elemento91">
+        <p class="numero-atomico">91</p>
+        <p class="simbolo">Pa</p>
+        <p class="nombre">Protactinio</p>
+        <p class="peso">231.00</p>
+    </div>
+
+    <div class="Uranio" id="elemento92">
+        <p class="numero-atomico">92</p>
+        <p class="simbolo">U</p>
+        <p class="nombre">Uranio</p>
+        <p class="peso">238.00</p>
+    </div>
+
+    <div class="Neptunio" id="elemento93">
+        <p class="numero-atomico">93</p>
+        <p class="simbolo">Np</p>
+        <p class="nombre">Neptunio</p>
+        <p class="peso">(237)</p>
+    </div>
+
+    <div class="Plutonio" id="elemento94">
+        <p class="numero-atomico">94</p>
+        <p class="simbolo">Pu</p>
+        <p class="nombre">Plutonio</p>
+        <p class="peso">(244)</p>
+    </div>
+
+    <div class="Americio" id="elemento95">
+        <p class="numero-atomico">95</p>
+        <p class="simbolo">Am</p>
+        <p class="nombre">Americio</p>
+        <p class="peso">(243)</p>
+    </div>
+
+    <div class="Curio" id="elemento96">
+        <p class="numero-atomico">96</p>
+        <p class="simbolo">Cm</p>
+        <p class="nombre">Curio</p>
+        <p class="peso">(247)</p>
+    </div>
+
+    <div class="Berkelio" id="elemento97">
+        <p class="numero-atomico">97</p>
+        <p class="simbolo">Bk</p>
+        <p class="nombre">Berkelio</p>
+        <p class="peso">(247)</p>
+    </div>
+
+    <div class="Californio" id="elemento98">
+        <p class="numero-atomico">98</p>
+        <p class="simbolo">Cf</p>
+        <p class="nombre">Californio</p>
+        <p class="peso">(251)</p>
+    </div>
+
+    <div class="Einstenio" id="elemento99">
+        <p class="numero-atomico">99</p>
+        <p class="simbolo">Es</p>
+        <p class="nombre">Einstenio</p>
+        <p class="peso">(252)</p>
+    </div>
+
+    <div class="Fermio" id="elemento100">
+        <p class="numero-atomico">100</p>
+        <p class="simbolo">Fm</p>
+        <p class="nombre">Fermio</p>
+        <p class="peso">(257)</p>
+    </div>
+
+    <div class="Mendelevio" id="elemento101">
+        <p class="numero-atomico">101</p>
+        <p class="simbolo">Md</p>
+        <p class="nombre">Mendelevio</p>
+        <p class="peso">(258)</p>
+    </div>
+
+    <div class="Nobelio" id="elemento102">
+        <p class="numero-atomico">102</p>
+        <p class="simbolo">No</p>
+        <p class="nombre">Nobelio</p>
+        <p class="peso">(259)</p>
+    </div>
+
+    <div class="Laurencio" id="elemento103">
+        <p class="numero-atomico">103</p>
+        <p class="simbolo">Lr</p>
+        <p class="nombre">Laurencio</p>
+        <p class="peso">(262)</p>
+    </div>
+
+    <div class="Rutherfordio" id="elemento104" onclick="abrirRutherfordio()">
+        <p class="numero-atomico">104</p>
+        <p class="simbolo">Rf</p>
+        <p class="nombre">Rutherfordio</p>
+        <p class="peso">(267)</p>
+    </div>
+
+    <div class="Dubnio" id="elemento105" onclick="abrirDubnio()">
+        <p class="numero-atomico">105</p>
+        <p class="simbolo">Db</p>
+        <p class="nombre">Dubnio</p>
+        <p class="peso">(268)</p>
+    </div>
+
+
+    <div class="Seaborgio" id="elemento106" onclick="abrirSeaborgio()">
+        <p class="numero-atomico">106</p>
+        <p class="simbolo">Sg</p>
+        <p class="nombre">Seaborgio</p>
+        <p class="peso">(269)</p>
+    </div>
+
+    <div class="Bohrio" id="elemento107" onclick="abrirBohrio()">
+        <p class="numero-atomico">107</p>
+        <p class="simbolo">Bh</p>
+        <p class="nombre">Bohrio</p>
+        <p class="peso">(270)</p>
+    </div>
+
+    <div class="Hasio" id="elemento108" onclick="abrirHassio()">
+        <p class="numero-atomico">108</p>
+        <p class="simbolo">Hs</p>
+        <p class="nombre">Hassio</p>
+        <p class="peso">(269)</p>
+    </div>
+
+    <div class="Meitnerio" id="elemento109" onclick="abrirMeitnerio()">
+        <p class="numero-atomico">109</p>
+        <p class="simbolo">Mt</p>
+        <p class="nombre">Meitnerio</p>
+        <p class="peso">(278)</p>
+    </div>
+
+    <div class="Darmstatio" id="elemento110">
+        <p class="numero-atomico">110</p>
+        <p class="simbolo">Ds</p>
+        <p class="nombre">Darmstatio</p>
+        <p class="peso">(281)</p>
+    </div>
+
+    <div class="Roentgenio" id="elemento111">
+        <p class="numero-atomico">111</p>
+        <p class="simbolo">Rg</p>
+        <p class="nombre">Roentgenio</p>
+        <p class="peso">(281)</p>
+    </div>
+
+    <div class="Copérnico" id="elemento112">
+        <p class="numero-atomico">112</p>
+        <p class="simbolo">Cn</p>
+        <p class="nombre">Copérnico</p>
+        <p class="peso">(285)</p>
+    </div>
+
+    <div class="Nihonio" id="elemento113">
+        <p class="numero-atomico">113</p>
+        <p class="simbolo">NH</p>
+        <p class="nombre">Nihonio</p>
+        <p class="peso">(286)</p>
+    </div>
+
+    <div class="Flerovio" id="elemento114">
+        <p class="numero-atomico">114</p>
+        <p class="simbolo">Fl</p>
+        <p class="nombre">Flerovio</p>
+        <p class="peso">(289)</p>
+    </div>
+
+    <div class="Moscovio" id="elemento115">
+        <p class="numero-atomico">115</p>
+        <p class="simbolo">Mc</p>
+        <p class="nombre">Moscovio</p>
+        <p class="peso">(289)</p>
+    </div>
+
+    <div class="Livermorio" id="elemento116">
+        <p class="numero-atomico">116</p>
+        <p class="simbolo">Lv</p>
+        <p class="nombre">Livermorio</p>
+        <p class="peso">(293)</p>
+    </div>
+
+    <div class="Ununseptium" id="elemento117">
+        <p class="numero-atomico">117</p>
+        <p class="simbolo">Ts</p>
+        <p class="nombre">Ununseptium</p>
+        <p class="peso">(294)</p>
+    </div>
+
+    <div class="Oganesón" id="elemento118">
+        <p class="numero-atomico">118</p>
+        <p class="simbolo">Og</p>
+        <p class="nombre">Oganesón</p>
+        <p class="peso">(294)</p>
+    </div>
+
+
+    <!-- COLORES PEQUEÑITOS PARA IDENTIFICAR -->
+     <!--Tipo de elementos (no metales, gases nobles...) y sus respectivos estilos (colores,posiciones)-->
+    <div style="width: 20px;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.82); background-color:  rgb(12, 243, 212);position: absolute;
+   top: 130px;left: 780px;"></div>
+    <p id="g-n">Ununseptium</p>
+
+    <div style="width: 20px;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.82);background-color: rgb(151, 46, 204);position: absolute;
+   top: 160px;left: 780px;"></div>
+    <p id="h-l">Metal</p>
+
+    <div style="width: 20px;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.82); background-color: rgb(238, 46, 46);position: absolute;
+   top: 190px;left: 780px;"></div>
+    <p id="n-m">Semimetal</p>
+
+    <div style="width: 20px;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.82); background-color: green;position: absolute;
+   top: 220px;left: 780px;"></div>
+    <p id="m-l">No Metal</p>
+    
+    <div style="width: 20px;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.82); background-color: rgb(82, 82, 255);position: absolute;
+   top: 250px;left: 780px;"></div>
+    <p id="o-m">Metales
+        <br> Representativos</p>
+
+    <div style="width: 20px;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.82);      background-color: rgb(162, 106, 179);
+position: absolute;
+   top: 130px;left: 940px;"></div>
+    <p id="m-t">Metales de transición</p>
+    
+    <div style="width: 20px;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.82);background-color: greenyellow;position: absolute;
+   top: 160px;left: 940px;"></div>
+    <p id="a-c">No Metales</p>
+    
+    <div style="width: 20px;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.82); background-color: #c712acf8;position: absolute;
+   top: 190px;left: 940px;"></div>
+    <p id="m-a"> Lantánidos</p>
+
+    <div style="width: 20px;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.82);background-color: rgb(220, 167, 206);position: absolute;
+   top: 220px;left: 940px;"></div>
+    <p id="l-t">Actínidos</p>
+
+    <!-- <div style="width: 20px;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.82);  position: absolute;
+   top: 250px;left: 940px;"></div>
+    <p id="a-s"></p>
+</body> -->
+</html>
